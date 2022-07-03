@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+{% block content %}
+<form action="http://localhost:5000/addDoctor" method="POST">
+    <label for="username">Username:</label><br>
+    <input type="text" id="username" name="doctorName"><br>
+    <label for="email">Email</label><br>
+    <input type="text" id="email" name="doctorEmail"><br>
+    <label for="password">Password:</label><br>
+    <input type="number" id="Pass" name="doctorPass"><br>
+    <label for="ID">ID:</label><br>
+    <input type="number" id="ID" name="doctorID"><br>
+    
+    <input type="submit" value="Submit">
+  </form>
+  <style>
+    a:link, a:visited {
+    
+      color: #000000;
+      padding: 15px 25px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+    }
+    
+   
+    </style> 
+<a href="http://127.0.0.1:5000/admin">Back</a> 
+
+
+{% endblock content %} 

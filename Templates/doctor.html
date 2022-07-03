@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+{% block content %}
+<h1>Welcome back Doctor !</h1>
+<div class="row">
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">View your patient</h5>
+          <a href="http://127.0.0.1:5000/yourPatient" class="btn btn-primary">View</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Patients history</h5>
+          <a href="http://127.0.0.1:5000/patientH" class="btn btn-primary">View</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <style>
+    a:link, a:visited {
+    
+      color: #000000;
+      padding: 15px 25px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+    }
+    
+   
+    </style> 
+  <a href="http://127.0.0.1:5000/home">Back</a>   
+  
+{% endblock content %}
